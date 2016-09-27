@@ -20,6 +20,6 @@ Gotta Get'em All!!
 Enjoy!!
 
 2. ##**TO RUN THE GAME :**
-   ===================
-Open index.html file in your browser to play!
+===========================
+Click on Link: https://poojar24.github.io/Arcade-Game/ to play!
 ![Arcade Classics](images/screenshot.png)
