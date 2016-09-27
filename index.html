@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARCADE CLASSICS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Resources -->
+    <script src="js/resources.js"></script>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+     <script src="js/app.js"></script>
+</head>
+<body>
+
+        <!-- Engine -->
+    <script type="text/javascript" src="js/engine.js"></script>
+
+    <!-- Header -->
+    <header>
+        <img class="image-responsive" src="images/logo.png">
+    </header>
+    <!-- /Header -->
+
+    <!-- Footer -->
+    <footer>
+    <p> <em>Made By Pooja R </em></p>
+            <a id="howToOpen" class="how-to-link">How to play</a>
+    </footer>
+    <!-- /Footer -->
+
+        <!-- Start Screen -->
+    <div id="startScreen" class="start-screen overlay">
+                <div class="rock"></div>
+        <div class="content">
+            <img class="image-responsive" src="images/logo.png">
+                <a id="playGame" class="button">Play Now!</a>
+            </div>
+            <div class="grass"></div>
+    </div>
+    <!-- /Start Screen -->
+
+    <!-- How To Play -->
+        <div id="howTo" class="how-to overlay hidden">
+            <div class="content">
+            <h2 class="heading">How to Play</h2>
+                <table>
+                <tr>
+                    <td><img src="images/arrows.png" alt="Arrows"></td>
+                    <td>move player</td>
+                </tr>
+                <tr>
+                    <td class="small"><img src="images/water-block.png" alt="Water block"></td>
+                    <td>reach the water <br>level Up = 600 pts</td>
+                </tr>
+                <tr>
+                    <td class="small"><img src="images/grass-block.png" alt="Grass block"></td>
+                    <td>safe zone</td>
+                </tr>
+                <tr>
+                    <td class="small"><img src="images/enemy-bug.png" alt="Enemy bug"></td>
+                    <td>avoid the bug.</td>
+                </tr>
+                <tr>
+                    <td><img src="images/stat-heart.png" alt="Lives"></td>
+                    <td>3 Lives.  1 life lost at every collision with bug</td>
+                </tr>
+                <tr>
+                    <td class="small">
+                        <img src="images/Heart.png" alt="Heart">
+                        <img src="images/Star.png" alt="Star">
+                        <img src="images/Key.png" alt="Key">
+                    </td>
+                    <td>collect = 300 pts (each)</td>
+                </tr>
+                <tr>
+                    <td class="small">
+                        <img src="images/Gem Blue.png" alt="Gem Blue">
+                        <img src="images/Gem Green.png" alt="Gem Green">
+                        <img src="images/Gem Orange.png" alt="Gem Orange">
+                    </td>
+                    <td>collect = 300 pts (each)</td>
+                </tr>
+            </table>
+
+                <a id="howToClose" class="button">Got it!</a>
+            </div>
+        </div>
+    <!--/ How To Play -->
+
+        <!-- Collision -->
+    <div id="collision" class="collision overlay hidden"></div>
+    <!-- /Collision -->
+
+        <!-- Game Over -->
+    <div id="gameOver" class="game-over overlay hidden">
+        <div class="content">
+                <h2 class="heading">Game Over</h2>
+                <div class="final-score">
+                    Final Score: <span id="score"></span>
+                </div>
+                <a id="playAgain" class="button">Play Again</a>
+            </div>
+    </div>
+    <!-- /Game Over -->
+
+</body>
+</html>
